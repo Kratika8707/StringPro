@@ -1,0 +1,25 @@
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	     int j=0;
+	    String s1 = "ad";
+	    String s2 = "abac";
+	   
+	         int M = s1.length();
+             int N = s2.length();
+ 
+      
+        for (int i = 0; i <=  N-M; i++) {
+           
+            for (j = 0; j < M; j++)
+                if (s2.charAt(i + j)
+                    != s1.charAt(j))
+                    break;
+         if (j == M)
+               System.out.println("YEs");
+	    }
+
+
+	}
+}
